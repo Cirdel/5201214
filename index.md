@@ -4,32 +4,6 @@
 ### <center>思念你的此时此刻是北京时间<center>
 <center>
 <html>
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>现在时间</title>
-<script type="text/javascript">
-var attime;
-function clock() {
-var time = new Date();
-attime = " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + 
-time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;
-document.getElementById("clock").value = attime;
-            }
-//          setInterval()计时器来显示动态时间。
-            setInterval(clock,100);
-        </script>
-    </head>
-
-<body>
-<form>
-<input type="text" id="clock" size="99" />
-</form>       
-</body>
-
-</html>
-</center>
-<html>
 <head>
 <meta charset="utf-8">
 <title>js setInterVal()实时显示时间、日期</title>
@@ -58,15 +32,8 @@ var currenttime = year + "年" + month + "月" + day + "日 " + hours + ":" + mi
 	
 }
 var  timer = window.setInterval(displayDate,1000);
-function stopTimer(){
-	window.clearInterval(timer);
-}
-</script>
-</head>
-<body>
- 
-<p id="demo"></p>
-<button onclick="stopTimer();" style="width:240px;">Stop</button>
+
 	
 </body>
 </html>
+</center>
