@@ -12,7 +12,7 @@
 var attime;
 function clock() {
 var time = new Date();
-<center>attime = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;</center>
+attime = <center>time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;</center>
 document.getElementById("clock").value = attime;
             }
 //          setInterval()计时器来显示动态时间。
