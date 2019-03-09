@@ -34,17 +34,7 @@ function displayDate(){
 	var currenttime = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + day1;
 	document.getElementById("demo").innerHTML = currenttime;
 	
-}
-var  timer = window.setInterval(displayDate,1000);
-function stopTimer(){
-	window.clearInterval(timer);
-}
-</script>
-</head>
-<body>
- 
-<p id="demo"></p>
-<button onclick="stopTimer();" style="width:240px;">一个按了就会停的按钮</button>
+
 	
 </body>
 </html>
