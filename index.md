@@ -1,10 +1,10 @@
 # <center>韶翎裳 💗 桑小染</center>
-<!DOCTYPE HTML>
+
 <html>
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>定时器</title>
+<title>现在时间</title>
 <script type="text/javascript">
 var attime;
 function clock() {
