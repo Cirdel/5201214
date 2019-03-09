@@ -1,6 +1,7 @@
 # <center>韶翎裳 💗 桑小染</center>
 #### <center>3479506443 - 1060802477</center>
 ### 目前时间
+<center>
 <html>
 
 <head>
@@ -25,3 +26,4 @@ document.getElementById("clock").value = attime;
 </body>
 
 </html>
+</center>
