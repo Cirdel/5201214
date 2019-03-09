@@ -36,11 +36,6 @@ document.getElementById("demo").innerHTML = currenttime;
 	
 }
 var  timer = window.setInterval(displayDate,1000);
-function stopTimer(){
-	window.clearInterval(timer);
-}
-</script>
-</head>
 </html>
 </center>
-
+测试
