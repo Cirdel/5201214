@@ -1,6 +1,6 @@
 # <center>韶翎裳 💗 桑小染</center>
-#### 3479506443 - 1060802477
-### 现在时间
+#### <center>3479506443 - 1060802477</center>
+### 目前时间
 <html>
 
 <head>
@@ -10,7 +10,7 @@
 var attime;
 function clock() {
 var time = new Date();
-attime = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;
+attime = time.FullYear() + " / " + time.getMonth() + " / " + time.getDate() + " / " + time.getHours() + " : " + time.getMinutes() + " : " + time.getSeconds() ;
 document.getElementById("clock").value = attime;
             }
 //          setInterval()计时器来显示动态时间。
