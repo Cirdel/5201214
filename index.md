@@ -1,6 +1,6 @@
 # <center>韶翎裳 💗 桑小染</center>
 #### <center>3479506443 - 1060802477</center>
-### <center>目前时间<center>
+### <center>此时此刻是北京时间<center>
 <center>
 <html>
 
