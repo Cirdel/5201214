@@ -21,7 +21,7 @@ document.getElementById("clock").value = attime;
 
 <body>
 <form>
-<input type="text" id="clock" size="50" />
+<input type="text" id="clock" size="99" />
 </form>       
 </body>
 
