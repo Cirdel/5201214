@@ -10,7 +10,7 @@
 var attime;
 function clock() {
 var time = new Date();
-attime = time.FullYear() + "/" + time.getMonth() + "/" + time.getDate() + "/" + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;
+attime = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() ;
 document.getElementById("clock").value = attime;
             }
 //          setInterval()计时器来显示动态时间。
