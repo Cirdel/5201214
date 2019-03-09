@@ -38,4 +38,6 @@ document.getElementById("demo").innerHTML = currenttime;
 var  timer = window.setInterval(displayDate,1000);
 </html>
 </center>
+
+
 测试
