@@ -41,12 +41,6 @@ function stopTimer(){
 }
 </script>
 </head>
-<body>
- 
-<p id="demo"></p>
-<button onclick="stopTimer();" style="width:240px;">我不想看现在什么时候了!</button>
-	
-</body>
 </html>
 </center>
-233
+
