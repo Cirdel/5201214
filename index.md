@@ -56,34 +56,47 @@ function stopTimer(){
 </center>
 ###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
 <center>LOVE</center>
-<center>
-<html>
+
+<html lang="en">
 <head>
-<meta http-equiv=" "Content-Type" "content=" "text/html;charset=UTF-8" ">
-<body>
-<input type=" "text" " value=" " id="input" size=" "500" ">
- 
- <script>    
- var txt= document.getElementById("input");
-setInterval(function () {
-        //获取系统当前时间
-var now = new Date();
-        //实例化今年跨年时间   2019/1/1  这里的0表示1月份
-var targDate = new Date(now.getFullYear() + 1, 0, 1);
-        //跨年时间与此时此刻时间差（毫秒）
-var long = targDate - now;
-var leftDay = parseInt(long/ 1000 / 60 / 60 / 24);
-long = long % (1000 * 60 * 60 * 24);
-var leftHour =parseInt(long / 1000 / 60 / 60);
-long = long % (1000 * 60 * 60);
-var leftMinute = parseInt(long / 1000 / 60) ;
-long = long % (1000 * 60 );
-var leftSeconde = parseInt(long / 1000);
-txt.value= now.getFullYear() + "爱情列车到达下一年还剩" + leftDay + "天" +leftHour + "时"+leftMinute+"分"+leftSeconde+"秒";
-    }, 1000);
- </script> 
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+    <style type="text/css">
+        #box {
+            width:400px;
+            height: 200px;
+            line-height: 200px;
+            margin: 100px auto;
+            color:red;
+        }
+    </style>
 </head>
+<body>
+    <div id="box"></div>
 </body>
+<script type="text/javascript">
+    var box = document.getElementById('box');
+    setInterval(fun,1000);
+    function fun(){
+        var date = new Date();//得到当前时间
+        // console.log(date);
+        var endTime = new Date("2026/8/11");//设定终点时间
+        // console.log(endTime);
+        var ms = endTime.getTime()-date.getTime();//得到相差毫秒数
+        // console.log(ms);
+	var y = parseInt(ms/(1000*60*60*24*30*12)%1);
+        var m = parseInt(ms/(1000*60*60*24*30)%12);//得到距离月份并取整，此处默认每月30天
+        var d = parseInt(ms/(1000*60*60*24)%30);//得到天数
+        var h = parseInt(ms/(1000*60*60)%24);//得到小时数
+        var min = parseInt(ms/(1000*60)%60);//得到分钟数
+        var s = parseInt(ms/1000%60);//得到秒数
+        m<10 ? m='0'+m : m;//如果月份数小于10,显示为0x,大于或等于则为原值
+        d<10 ? d='0'+d : d;
+        h<10 ? h='0'+h : h;
+        min<10 ? min='0'+min : min;
+        s<10 ? s='0'+s : s;
+        box.innerHTML = "距离梦想时刻 "+y+"年"+m+"月"+d+"天"+h+"小时"+min+"分"+s+"秒";
+    }
+    
+</script>
 </html>
-</center>
-c
