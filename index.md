@@ -34,7 +34,7 @@ function displayDate(){
 	var day1 = date.getDay();
 	day1 = "星期" + a[day1];
 	
-	var currenttime = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + day1;
+	var currenttime = "<" + year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + day1 + ">";
 	document.getElementById("demo").innerHTML = currenttime;
 	
 }
@@ -53,3 +53,4 @@ function stopTimer(){
 </html>
 </center>
 ###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
+<center>我爱你</center>
