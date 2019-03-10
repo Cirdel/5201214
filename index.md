@@ -1,11 +1,11 @@
 # <center>韶翎裳 ♡ 桑小染</center>
 ##### <center>3479506443 - 1060802477</center>
-###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
-
 #### <center><相恋于 2019年02月11日 19:55 星期一>
 
 ###### <center><2019ねん02がつ じゅういちにち 19:55 に恋する>
 
+###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
+	
 ### <center>思念你的此时此刻是<center>
 <center>
 <html>
@@ -56,3 +56,36 @@ function stopTimer(){
 </center>
 ###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
 <center>我爱你</center>
+<center>
+<html>
+    <head>
+        <meta http-equiv=" "Content-Type" "content=" "text/html;charset=UTF-8" ">
+        <title>倒计时</title>
+    </head>
+    <body>
+      <input type=" "text" " value=" " id="input" size=" "500" ">
+ 
+    <script>    
+    var txt= document.getElementById("input");
+    setInterval(function () {
+        //获取系统当前时间
+        var now = new Date();
+        //实例化今年跨年时间   2019/1/1  这里的0表示1月份
+        var targDate = new Date(now.getFullYear() + 1, 0, 1);
+        //跨年时间与此时此刻时间差（毫秒）
+        var long = targDate - now;
+        var leftDay = parseInt(long/ 1000 / 60 / 60 / 24);
+        long = long % (1000 * 60 * 60 * 24);
+        var leftHour =parseInt(long / 1000 / 60 / 60);
+        long = long % (1000 * 60 * 60);
+        var leftMinute = parseInt(long / 1000 / 60) ;
+        long = long % (1000 * 60 );
+        var leftSeconde = parseInt(long / 1000);
+        txt.value= now.getFullYear() +"爱情列车到达下一年还剩" + leftDay
+                + "天" +leftHour + "时"+leftMinute+"分"+leftSeconde+"秒";
+    }, 1000);
+ 
+</script> 
+    </body>
+</html>
+</center>
