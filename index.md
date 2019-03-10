@@ -65,7 +65,7 @@ function stopTimer(){
     <body>
       <input type=" "text" " value=" " id="input" size=" "500" ">
  
-    <script>    
+ <script>    
     var txt= document.getElementById("input");
     setInterval(function () {
         //获取系统当前时间
