@@ -60,7 +60,7 @@ function stopTimer(){
 <head>
     <style type="text/css">
         div{
-            font-size:58px;
+            font-size:1px;
         }
     </style>
     <meta charset="utf-8">
@@ -121,4 +121,4 @@ function stopTimer(){
 <body>
 <div id="timer"></div>
 </body>
-</center>
+
