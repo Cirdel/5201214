@@ -84,8 +84,6 @@ function stopTimer(){
         // console.log(endTime);
         var ms = endTime.getTime()-date.getTime();//得到相差毫秒数
         // console.log(ms);
-	var y = parseInt(ms/(1000*60*60*24*30*12)%1);
-        var m = parseInt(ms/(1000*60*60*24*30)%12);//得到距离月份并取整，此处默认每月30天
         var d = parseInt(ms/(1000*60*60*24)%30);//得到天数
         var h = parseInt(ms/(1000*60*60)%24);//得到小时数
         var min = parseInt(ms/(1000*60)%60);//得到分钟数
@@ -95,7 +93,7 @@ function stopTimer(){
         h<10 ? h='0'+h : h;
         min<10 ? min='0'+min : min;
         s<10 ? s='0'+s : s;
-        box.innerHTML = "距离梦想时刻 "+y+"年"+m+"月"+d+"天"+h+"小时"+min+"分"+s+"秒";
+        box.innerHTML = "距离梦想时刻 "+"天"+h+"小时"+min+"分"+s+"秒";
     }
     
 </script>
