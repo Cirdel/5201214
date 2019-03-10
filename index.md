@@ -80,7 +80,7 @@ function stopTimer(){
         var leftMinute = parseInt(long / 1000 / 60) ;
         long = long % (1000 * 60 );
         var leftSeconde = parseInt(long / 1000);
-        txt.value= now.getFullYear() +"爱情列车到达下一年还剩" + leftDay
+        txt.value= now.getFullYear() + "爱情列车到达下一年还剩" + leftDay
                 + "天" +leftHour + "时"+leftMinute+"分"+leftSeconde+"秒";
     }, 1000);
  
