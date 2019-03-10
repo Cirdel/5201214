@@ -55,7 +55,7 @@ function stopTimer(){
 </html>
 </center>
 ###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
-<center>我爱你啊</center>
+<center>LOVE</center>
 <center>
 <html>
 <head>
