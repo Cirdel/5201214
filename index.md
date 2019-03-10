@@ -60,7 +60,7 @@ function stopTimer(){
 <head>
     <style type="text/css">
         div{
-            font-size:1px;
+            font-size:20px;
         }
     </style>
     <meta charset="utf-8">
@@ -106,7 +106,7 @@ function stopTimer(){
                     int_minute="0"+int_minute;
                 if(int_second<10)
                     int_second="0"+int_second;
-                str_time="还剩"+int_day+"天"+int_hour+"小时"+int_minute+"分钟"+int_second+"秒";
+                str_time="离梦想の日还剩"+int_day+"天"+int_hour+"小时"+int_minute+"分钟"+int_second+"秒";
                 timer.innerHTML=str_time;
                 setTimeout("show_time()",1000);
             }
