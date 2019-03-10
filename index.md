@@ -55,46 +55,70 @@ function stopTimer(){
 </html>
 </center>
 ###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
-<center>LOVE</center>
-
-<html lang="en">
+<center>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>倒计时</title>
-    <style type="text/css">
-        #box {
-            width:400px;
-            height: 200px;
-            line-height: 200px;
-            margin: 100px auto;
-            color:red;
-        }
-    </style>
+    <style type="text/css">
+        div{
+            font-size:58px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>JS时间倒计时</title>
+    <script type="text/javascript">
+        var time_now_server,time_now_client,time_end,time_server_client;
+ 
+        time_end=new Date("2026/08/11 00:00:0");//结束的时间
+        time_end=time_end.getTime();//获取的是毫秒
+ 
+        time_now_server=new Date();//开始的时间
+        time_now_server=time_now_server.getTime();
+        setTimeout("show_time()",1000);
+ 
+        function show_time()
+        {
+            var timer = document.getElementById("timer");
+            var hourid = document.getElementById("hour");
+            if(!timer){
+                return ;
+            }
+            timer.innerHTML =time_now_server;
+ 
+            var time_now,time_distance,str_time;
+            var int_day,int_hour,int_minute,int_second;
+            var time_now=new Date();
+            time_now=time_now.getTime();
+            time_distance=time_end-time_now;
+            if(time_distance>0)
+            {
+                int_day=Math.floor(time_distance/86400000)
+                time_distance-=int_day*86400000;
+                int_hour=Math.floor(time_distance/3600000)
+                time_distance-=int_hour*3600000;
+                int_minute=Math.floor(time_distance/60000)
+                time_distance-=int_minute*60000;
+                int_second=Math.floor(time_distance/1000)
+ 
+                if(int_hour < 10)
+                    int_hour="0"+int_hour;
+                if(int_minute<10)
+                    int_minute="0"+int_minute;
+                if(int_second<10)
+                    int_second="0"+int_second;
+                str_time="还剩"+int_day+"天"+int_hour+"小时"+int_minute+"分钟"+int_second+"秒";
+                timer.innerHTML=str_time;
+                setTimeout("show_time()",1000);
+            }
+            else
+            {
+                timer.innerHTML =0;
+            }
+        }
+    </script>
 </head>
+ 
 <body>
-    <div id="box"></div>
+<div id="timer"></div>
 </body>
-<script type="text/javascript">
-    var box = document.getElementById('box');
-    setInterval(fun,1000);
-    function fun(){
-        var date = new Date();//得到当前时间
-        // console.log(date);
-        var endTime = new Date("2026/8/11");//设定终点时间
-        // console.log(endTime);
-        var ms = endTime.getTime()-date.getTime();//得到相差毫秒数
-        // console.log(ms);
-        var d = parseInt(ms/(1000*60*60*24)%30);//得到天数
-        var h = parseInt(ms/(1000*60*60)%24);//得到小时数
-        var min = parseInt(ms/(1000*60)%60);//得到分钟数
-        var s = parseInt(ms/1000%60);//得到秒数
-        m<10 ? m='0'+m : m;//如果月份数小于10,显示为0x,大于或等于则为原值
-        d<10 ? d='0'+d : d;
-        h<10 ? h='0'+h : h;
-        min<10 ? min='0'+min : min;
-        s<10 ? s='0'+s : s;
-        box.innerHTML = "距离梦想时刻 "+"天"+h+"小时"+min+"分"+s+"秒";
-    }
-    
-</script>
-</html>
+</center>
