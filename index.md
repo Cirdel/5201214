@@ -60,32 +60,30 @@ function stopTimer(){
 <html>
 <head>
 <meta http-equiv=" "Content-Type" "content=" "text/html;charset=UTF-8" ">
-<title>倒计时</title>
-    <body>
-      <input type=" "text" " value=" " id="input" size=" "500" ">
+<body>
+<input type=" "text" " value=" " id="input" size=" "500" ">
  
  <script>    
-    var txt= document.getElementById("input");
-    setInterval(function () {
+ var txt= document.getElementById("input");
+setInterval(function () {
         //获取系统当前时间
-        var now = new Date();
+var now = new Date();
         //实例化今年跨年时间   2019/1/1  这里的0表示1月份
-        var targDate = new Date(now.getFullYear() + 1, 0, 1);
+var targDate = new Date(now.getFullYear() + 1, 0, 1);
         //跨年时间与此时此刻时间差（毫秒）
-        var long = targDate - now;
-        var leftDay = parseInt(long/ 1000 / 60 / 60 / 24);
-        long = long % (1000 * 60 * 60 * 24);
-        var leftHour =parseInt(long / 1000 / 60 / 60);
-        long = long % (1000 * 60 * 60);
-        var leftMinute = parseInt(long / 1000 / 60) ;
-        long = long % (1000 * 60 );
-        var leftSeconde = parseInt(long / 1000);
-        txt.value= now.getFullYear() + "爱情列车到达下一年还剩" + leftDay
-                + "天" +leftHour + "时"+leftMinute+"分"+leftSeconde+"秒";
+var long = targDate - now;
+var leftDay = parseInt(long/ 1000 / 60 / 60 / 24);
+long = long % (1000 * 60 * 60 * 24);
+var leftHour =parseInt(long / 1000 / 60 / 60);
+long = long % (1000 * 60 * 60);
+var leftMinute = parseInt(long / 1000 / 60) ;
+long = long % (1000 * 60 );
+var leftSeconde = parseInt(long / 1000);
+txt.value= now.getFullYear() + "爱情列车到达下一年还剩" + leftDay + "天" +leftHour + "时"+leftMinute+"分"+leftSeconde+"秒";
     }, 1000);
- 
-</script> 
+ </script> 
 </head>
 </body>
 </html>
 </center>
+c
