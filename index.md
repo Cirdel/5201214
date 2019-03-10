@@ -59,7 +59,7 @@ function stopTimer(){
 <head>
     <style type="text/css">
         div{
-            font-size:20px;
+            font-size:10px;
         }
     </style>
     <meta charset="utf-8">
