@@ -3,8 +3,6 @@
 #### <center><相恋于 2019年02月11日 19:55 星期一>
 
 ###### <center><2019ねん02がつ じゅういちにち 19:55 に恋する>
-
-###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
 	
 ### <center>思念你的此时此刻是<center>
 <center>
@@ -106,7 +104,7 @@ function stopTimer(){
                     int_minute="0"+int_minute;
                 if(int_second<10)
                     int_second="0"+int_second;
-                str_time="离梦想の日还剩"+int_day+"天"+int_hour+"小时"+int_minute+"分钟"+int_second+"秒";
+                str_time="离梦想の日还剩<"+int_day+"天"+int_hour+"小时"+int_minute+"分钟"+int_second+"秒>";
                 timer.innerHTML=str_time;
                 setTimeout("show_time()",1000);
             }
