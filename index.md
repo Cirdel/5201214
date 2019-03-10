@@ -58,10 +58,10 @@ function stopTimer(){
 <center>我爱你</center>
 <center>
 <html>
-    <head>
-        <meta http-equiv=" "Content-Type" "content=" "text/html;charset=UTF-8" ">
-        <title>倒计时</title>
-    </head>
+<head>
+<meta http-equiv=" "Content-Type" "content=" "text/html;charset=UTF-8" ">
+<title>倒计时</title>
+</head>
     <body>
       <input type=" "text" " value=" " id="input" size=" "500" ">
  
