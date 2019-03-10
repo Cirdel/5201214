@@ -79,11 +79,11 @@ function displayDate(){
 	var seconds = date.getSeconds();
 	seconds = ((seconds<10)?"0":"") + seconds;
 	
-	var a = new Array("日","一","二","三","四","五","六");
+	var a = new Array("にちようび","げつようび","かようび","すいようび","もくようび","きんようび","どようび");
 	var day1 = date.getDay();
-	day1 = "星期" + a[day1];
+	day1 = a[day1];
 	
-	var currenttime = "<" + year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + day1 + ">";
+	var currenttime = "<" + year + "ねん" + month + "がつ" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + day1 + ">";
 	document.getElementById("demo").innerHTML = currenttime;
 	
 }
@@ -102,4 +102,4 @@ function stopTimer(){
 </html>
 </center>
 ###### <center>-----==-----==-----==-----==-----==-----==-----==-----==-----==-----</center>
-<center>我爱你</center>
+<center>我爱你啊</center>
